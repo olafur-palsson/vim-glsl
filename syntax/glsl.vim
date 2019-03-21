@@ -649,7 +649,6 @@ syn keyword glslBuiltinFunction unpackUnorm2x16
 syn keyword glslBuiltinFunction unpackUnorm4x8
 syn keyword glslBuiltinFunction usubBorrow
 
-hi def link glslBuiltinFunction Conditional
 hi def link glslOperator        Conditional
 hi def link glslConditional     Conditional
 hi def link glslRepeat          Repeat
@@ -675,6 +674,9 @@ hi def link glslStructure       Structure
 hi def link glslType            Type
 hi def link glslQualifier       StorageClass
 hi def link glslBuiltinConstant Constant
+
+hi! link glslBuiltinFunction Conditional
+
 hi def link glslBuiltinVariable Identifier
 hi def link glslSwizzle         Identifier
 
