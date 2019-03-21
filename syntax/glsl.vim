@@ -6,7 +6,13 @@ if exists("b:current_syntax") && b:current_syntax == "glsl"
 endif
 
 " Operators
-syn match glslOperator "\v(?:\%|\&|\+|\-|\=|\/|\||\.|\*|\:|>|<|\!|\?|~|\^)"
+syn match glslOperator	"\(<<\|>>\|[-+*/%&^|<>!=]\)="
+syn match glslOperator	"<<\|>>\|&&\|||\|++\|--\|->"
+syn match glslOperator	"[.!~*&%<>^|=,+-]"
+syn match glslOperator	"/[^/*=]"me=e-1
+syn match glslOperator	"/$"
+syn match glslOperator "&&\|||"
+syn match glslOperator	"[][]"
 
  
 " Functions
