@@ -650,7 +650,6 @@ syn keyword glslBuiltinFunction unpackUnorm4x8
 syn keyword glslBuiltinFunction usubBorrow
 
 hi def link glslOperator        Conditional
-hi def link glslFunction        Function
 hi def link glslConditional     Conditional
 hi def link glslRepeat          Repeat
 hi def link glslStatement       Statement
