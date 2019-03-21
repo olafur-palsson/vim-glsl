@@ -674,7 +674,7 @@ hi def link glslStructure       Structure
 hi def link glslType            Type
 hi def link glslQualifier       StorageClass
 hi def link glslBuiltinConstant Constant
-hi def link glslBuiltinFunction Tag
+hi def link glslBuiltinFunction Conditional
 hi def link glslBuiltinVariable Identifier
 hi def link glslSwizzle         Identifier
 
