@@ -14,9 +14,10 @@ syn match glslOperator	"/$"
 syn match glslOperator "&&\|||"
 syn match glslOperator	"[][]"
 
+
  
 " Functions
-syn match glslFunction "([a-zA-Z_][a-zA-Z0-9_]*)\((.*)\)([\n\r\s]+)"
+syn match glslFunction "\~\?\zs\h\w*\ze([^)]*\()\s*\(const\)\?\)\?$"
 
 " Statements
 syn keyword glslConditional if else switch case default
