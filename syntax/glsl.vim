@@ -14,11 +14,6 @@ syn match glslOperator	"/$"
 syn match glslOperator "&&\|||"
 syn match glslOperator	"[][]"
 
-
- 
-" Functions
-syn match glslFunction "\~\?\zs\h\w*\ze([^)]*\()\s*\(const\)\?\)\?$"
-
 " Statements
 syn keyword glslConditional if else switch case default
 syn keyword glslRepeat      for while do
@@ -680,7 +675,7 @@ hi def link glslStructure       Structure
 hi def link glslType            Type
 hi def link glslQualifier       StorageClass
 hi def link glslBuiltinConstant Constant
-hi def link glslBuiltinFunction Function
+hi def link glslBuiltinFunction PreProc
 hi def link glslBuiltinVariable Identifier
 hi def link glslSwizzle         Identifier
 
