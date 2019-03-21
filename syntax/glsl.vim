@@ -5,6 +5,12 @@ if exists("b:current_syntax") && b:current_syntax == "glsl"
   finish
 endif
 
+" Operators
+syn match glslOperator "(?:\%|\&|\+|\-|\=|\/|\||\.|\*|\:|>|<|\!|\?|~|\^)"
+
+" Functions
+syn match glslFunction "([a-zA-Z_][a-zA-Z0-9_]*)\((.*)\)([\n\r\s]+)"
+
 " Statements
 syn keyword glslConditional if else switch case default
 syn keyword glslRepeat      for while do
@@ -640,6 +646,8 @@ syn keyword glslBuiltinFunction unpackUnorm2x16
 syn keyword glslBuiltinFunction unpackUnorm4x8
 syn keyword glslBuiltinFunction usubBorrow
 
+hi def link glslOperator        Conditional
+hi def link glslFunction        Function
 hi def link glslConditional     Conditional
 hi def link glslRepeat          Repeat
 hi def link glslStatement       Statement
